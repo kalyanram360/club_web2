@@ -3,7 +3,23 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaSearch, FaArrowRight, FaClock } from 'react-icons/fa';
 import { useQuery } from '@tanstack/react-query';
+<<<<<<< HEAD
 import type { Article } from '@shared/schema';
+=======
+// Local Article type to avoid missing module '@shared/schema'.
+// If you have a canonical shared type, replace this with the correct import path.
+type Article = {
+  id: string | number;
+  featured?: number;
+  category: string;
+  title: string;
+  excerpt?: string;
+  author: string;
+  authorAvatar?: string;
+  date?: string;
+  readTime?: string;
+};
+>>>>>>> 351436f5c26b15807a848398a1f8f3634fb63a82
 
 const categories = ['All', 'Tutorials', 'Events', 'Research', 'Projects', 'Insights'];
 

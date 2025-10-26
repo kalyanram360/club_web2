@@ -3,7 +3,11 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaTrophy, FaFileAlt, FaHandshake, FaBriefcase, FaMedal, FaCertificate } from 'react-icons/fa';
 import { useQuery } from '@tanstack/react-query';
+<<<<<<< HEAD
 import type { Achievement } from '../../shared/schema';
+=======
+import type { Achievement } from '@shared/schema';
+>>>>>>> 351436f5c26b15807a848398a1f8f3634fb63a82
 import Counter from './Counter';
 
 const statistics = [
@@ -91,7 +95,11 @@ export default function Outcomes() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+<<<<<<< HEAD
               className="bg-white rounded-2xl p-6 shadow-md border-t-4 border-t-solid text-center"
+=======
+              className="bg-white rounded-2xl p-6 shadow-md border-t-4 border-t-gradient-to-r from-[#0891b2] to-[#059669] text-center"
+>>>>>>> 351436f5c26b15807a848398a1f8f3634fb63a82
               style={{ borderImage: 'linear-gradient(to right, #0891b2, #059669) 1' }}
               data-testid={`card-stat-${stat.label.toLowerCase().replace(/\s+/g, '-')}`}
             >

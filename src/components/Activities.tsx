@@ -3,9 +3,27 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaUsers, FaArrowRight, FaCalendar } from 'react-icons/fa';
 import { useQuery } from '@tanstack/react-query';
+<<<<<<< HEAD
 import type { Event } from '@shared/schema';
 import { useEffect } from 'react';
 
+=======
+import { useEffect } from 'react';
+
+// Local Event type to avoid missing module import from '@shared/schema'
+type Event = {
+  id: string;
+  category: string;
+  date: string;
+  year: string | number;
+  title: string;
+  description: string;
+  images?: string[];
+  participants: number;
+  tags: string[];
+};
+
+>>>>>>> 351436f5c26b15807a848398a1f8f3634fb63a82
 const years = ['All', '2023', '2024', '2025'];
 
 const categoryColors: Record<string, string> = {

@@ -3,7 +3,11 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaLinkedin } from 'react-icons/fa';
 import { useQuery } from '@tanstack/react-query';
+<<<<<<< HEAD
 import type { TeamMember } from '../../shared/schema';
+=======
+import type { TeamMember } from '@shared/schema';
+>>>>>>> 351436f5c26b15807a848398a1f8f3634fb63a82
 
 const categories = [
   { id: 'all', label: 'All Members' },
