@@ -4,7 +4,6 @@ import { FaUsers, FaCalendarAlt, FaProjectDiagram } from 'react-icons/fa';
 import { HiChevronDown } from 'react-icons/hi';
 import { TypeAnimation } from 'react-type-animation';
 import Counter from './Counter';
-import RotatingText from './RotatingText'
 
 const stats = [
   { icon: FaUsers, value: 500, label: 'Members', suffix: '+' },
@@ -44,22 +43,6 @@ export default function Hero() {
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-4 bg-gradient-to-r from-[#0891b2] to-[#059669] bg-clip-text text-transparent tracking-tight leading-tight">
             AI Club
           </h1>
-          
-          {/* Rotating Text Badge */}
-          <div className="flex justify-center mb-6">
-            <RotatingText
-              texts={['Innovate', 'Learn', 'Build', 'Grow']}
-              mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg text-lg sm:text-xl md:text-2xl font-bold"
-              staggerFrom="last"
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              exit={{ y: "-120%" }}
-              staggerDuration={0.025}
-              splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-              transition={{ type: "spring", damping: 30, stiffness: 400 }}
-              rotationInterval={2000}
-            />
-          </div>
 
           {/* College Name */}
           <p className="text-xl md:text-2xl text-[#475569] mb-6 font-medium">
@@ -90,7 +73,7 @@ export default function Hero() {
             Join our vibrant community of AI enthusiasts, innovators, and future technologists. 
             Learn, build, and grow with hands-on workshops, cutting-edge projects, and industry connections.
           </p>
-          
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
             <motion.button
@@ -111,7 +94,7 @@ export default function Hero() {
             </motion.button>
           </div>
         </motion.div>
-        
+
         {/* Statistics Row */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
