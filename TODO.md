@@ -1,0 +1,3 @@
+- [x] Update schema.ts: change images field from integer to text array for events
+- [x] Update storage.ts: fix Club Inauguration event images to be an array instead of number
+- [x] Update index.ts: remove throw err; in error handler to prevent unhandled exceptions
