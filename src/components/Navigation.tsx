@@ -10,7 +10,7 @@ const navLinks = [
   { name: 'Outcomes', href: '#outcomes' },
   { name: 'Team', href: '#team' },
   { name: 'Activities', href: '#activities' },
-  { name: 'Editorials', href: '#editorials' },
+  { name: 'Editorials', href: '#editorials-simple' },
 ];
 
 const socialLinks = [

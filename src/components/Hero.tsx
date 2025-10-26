@@ -492,7 +492,7 @@ export default function Hero() {
             className="flex flex-col items-center lg:items-start text-center lg:text-left"
           >
             {/* Friendly Welcome Badge */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
@@ -505,7 +505,7 @@ export default function Hero() {
               <span className="text-sm font-semibold bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent">
                 Join Our Growing Community
               </span>
-            </motion.div>
+            </motion.div> */}
 
             {/* Main Heading with Logo */}
             <div className="flex items-center justify-center lg:justify-start gap-5 mb-6">
@@ -513,7 +513,7 @@ export default function Hero() {
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
                 <img 
-                  src="src\assets\logo.png"
+                  src="src\assets\logo2.png"
                   alt="AI Club Logo" 
                   className="relative w-20 h-20 md:w-32 md:h-32 rounded-full object-cover border-4 border-cyan-400/60 shadow-2xl group-hover:scale-110 transition-transform duration-500"
                 />
@@ -521,7 +521,7 @@ export default function Hero() {
 
               {/* Heading Text with Friendly Style */}
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-[#0891b2] via-[#06b6d4] to-[#059669] bg-clip-text text-transparent tracking-tight leading-tight" style={{ fontFamily: "'Poppins', 'Inter', sans-serif" }}>
-                AI Club
+                AIMOrbit
               </h1>
             </div>
 

@@ -4,6 +4,7 @@ import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 
 import Footer from './components/Footer'
+import EditorialsSimple from './components/EditorialsSimple'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Navigation />
       <main className="mt-8">
         <Hero />
+        <EditorialsSimple />
       </main>
       <Footer />
     </div>
