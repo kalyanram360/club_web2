@@ -1,3 +1,4 @@
+
 import './App.css'
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className=" bg-white">
       <Navigation />
-      <main>
+      <main className="mt-8">
         <Hero />
       </main>
       <Footer />
